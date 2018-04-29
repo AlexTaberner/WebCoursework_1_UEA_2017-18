@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>  
+	<meta charset="utf-8"> 
+	<title>Hotel California</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head> 
+
+<body>
+    <div class="mainDiv">
+        <div class="logoNavCont">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+            </div>
+            
+            <div id="navBar">
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="attractions">Local Attractions</a></li>
+					<li><a href="rooms">Rooms</a></li>
+                    <li><a href="booking">Book a room</a></li>
+					<li><a href="review">Reviews/Comments</a></li>
+					<li><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+			<script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+        
+        </div>
+        
+        <div class="main"> 
+			<div id="map">
+			</div>
+
+			<script>
+				function myMap() {
+					var mapOptions = {
+						center: new google.maps.LatLng(51.5295067,-0.1256532),
+						zoom: 15,
+						mapTypeId: google.maps.MapTypeId.HYBRID
+					}
+					var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+				}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkGzliRbpkG0mPXnTFdj9j6udlfgTgyLc&callback=myMap"></script>
+			
+			<div class = "tableMod">
+				<table>
+					<tr>
+						<th> Contact Hotel</th>
+						<th> Make a booking</th>
+						<th>General enquires</th>
+					</tr>
+					<tr>
+						<td><p>To contact the hotel before you 
+								arrive please call 07453579988.
+								This way we can make sure all of 
+								our services and facilities are
+								in perfect condition for your arrival								
+						</p></td>
+						<td><p>To make a booking please
+						please contact the hotel by 
+						07453579988. Or to make a booking online
+						please see the link at the top of this page
+						called "Book a room".
+						</p></td>
+						<td><p>For any general enquires
+						call 07453579988 to speak to an 
+						advisor at the front desk.
+						</p></td>
+						
+					</tr>
+				</table>
+			</div>
+		</div>
+        
+        <footer class="footer">
+            <div class="footercontainer">
+                <div class="footerfloats1">
+                    <div class="footerfloats2">
+                        <ul>
+                            <li> <a href="home"> Home </a> </li>
+                            <li> <a href="attractions"> Local Attractions </a> </li>
+                            <li> <a href="rooms"> Rooms on offer </a> </li>
+                            
+                        </ul>
+                        <ul>
+                            <li> <a href="booking"> Book a Room </a> </li>
+                            <li> <a href="review"> Reviews and Comments </a> </li>
+                            <li> <a href="Contact"> Contact us </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                        
+                <div class="footerfloats1">
+                    <p> &copy; Student: 100184794 + 100178609 - 2017 </p>
+                    <p> Web Programming Coursework </p>
+                </div>
+                
+                <div class="footerfloats1">
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img 	style="border:0;width:88px;height:31px"
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                    alt="Valid CSS!" 
+                            />
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

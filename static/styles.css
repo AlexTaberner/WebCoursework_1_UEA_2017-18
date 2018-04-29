@@ -1,0 +1,483 @@
+/* global reset across brower types */
+*
+{
+    margin: 0; 
+    padding: 0; 
+}
+
+.error h2 {
+	color: red;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+body
+{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D0D6B3;
+    padding: 0;
+    margin: 0;
+}
+
+.logoNavCont
+{
+    margin: auto;
+    min-height: 230px;
+    background-color:#143109;
+}
+
+.logo
+{
+    position: relative;
+    margin: auto;
+    padding: 0;
+    height: 200px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.inline li {
+    display: inline-block;
+}
+
+.mainDiv
+{
+    width: 100%;
+    max-width: 1024px;
+	min-height: 1080px;
+    height: 100%;
+    margin: auto;
+    Padding: 0;
+    background-color: #f7f7f7;
+}
+
+.main
+{
+    min-height: 100%;
+    background-color: #f7f7f7;
+    padding:0;
+    min-height: 720px;
+    height: 100%;
+    width: 100%;
+}
+
+p.para
+{
+		font: italic bold 20px/30px Georgia, serif;
+		padding-top:50px;
+}
+
+/** gmap CSS**/
+#map
+{
+	width:100%;
+	height:400px;
+	background:yellow
+}
+
+table, td, tr, th
+{
+   border: 2px solid green;
+   
+}
+
+table
+{
+	border-collapse:collapse;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	margin-bottom: auto;
+	width: 95%;
+}
+
+tr
+{
+	background-color:white;
+}
+
+td
+{
+	padding:25px;
+	max-width:33%;
+	max-height:300px;
+	
+}
+
+th
+{
+	padding-bottom:20px;
+	padding-top:5px;
+	background-color:#aaae7f;
+}
+
+.tableMod
+{
+	border: 2px solid green;
+	width: 90%;
+	margin: auto;
+	padding-bottom:50px;
+	padding-top:0;
+	background-color:#143109;
+	border-radius: 25px;
+	
+}
+
+div.tableBook
+{
+	border: 2px solid green;
+	width: 90%;
+	margin: auto;
+	padding-bottom:50px;
+	padding-top:0;
+	background-color:#143109;
+	border-radius: 25px;
+	
+}
+
+/** CSS FOR STATIC NAVBAR**/
+.sticky
+{
+  position: fixed;
+  top: 0;
+  max-width:1024px;
+  
+}
+
+#navBar
+{
+    z-index: 100;
+    width:100%;    
+    background-color: #aaae7f;
+    margin: auto;
+    text-align: center;
+}
+
+#navBar ul
+{
+    list-style-type: none;
+    padding: 0;
+	background-color: #aaae7f;
+    margin: auto;
+}
+
+#navBar li
+{
+    display: inline-block;
+    float: none;
+    min-width: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+#navBar li:hover
+{
+	background-color: grey;
+}
+
+#navBar li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+#navBar li a:hover
+{
+    background-color: grey;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1024px;
+	position: relative;
+	margin: auto;
+	background-color: black;
+}
+
+.mySlides {
+    display: none;
+    overflow: hidden;
+    max-height: 450px;
+    width: 100%;
+}
+
+.mySlides img {
+    margin: auto;
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor:pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: .7} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .7} 
+	to {opacity: 1}
+}
+
+/** Main news + content style **/
+div.content
+{
+	position: relative;
+	margin: 15px;
+	min-height: 150px;
+	height: 100%;
+	padding: 15px;
+	border-style: solid;
+	border-radius: 10px;
+	/* makes floats strech the div */
+	overflow: hidden;
+}
+
+div.contentform
+{
+	position: relative;
+	margin: 15px;
+	min-height: 150px;
+	height: 100%;
+	padding: 15px;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+div.contentright {
+	float: right;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+div.contentright img {
+    height: 200px;
+}
+
+div.contentleft {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+div.contentleft img 
+{
+    height: 200px;
+}
+
+ul.listStyle
+{
+    list-style-type: circle;
+	padding-left:20px;
+	padding-top:40px;
+	font: 15px arial, sans-serif;
+}
+
+/**Form CSS **/
+input[type="text"]
+{
+	max-width: 300px;
+    width: 100%;
+    min-height:20px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+input[type="date"]
+{
+	width: 250px;
+    padding: 12px 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+label 
+{
+padding-left: 20px;
+display:inline-block;
+width:10%;
+}
+
+/* footer css */
+.footercontainer {
+    margin: auto;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.footer {
+    position: relative;
+    margin: auto;
+    min-height: 120px;
+    max-width: 1024px;
+    background-color: #143109;
+    bottom: 0;
+}
+
+.footerfloats1 {
+	display: inline-block;
+	vertical-align: middle;
+	width: 33%;
+	margin: 0px auto;
+	padding: 0;
+	text-align: center;
+	font-family: arial, gadget, sans-serif;
+	color: #F1F1F1;
+}
+
+.footerfloats2 {
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto;
+	text-align: center;
+	font-family: arial, gadget, sans-serif;
+	color: #F1F1F1;
+}
+
+.footerfloats2 ul {
+	float: left;
+	list-style-type: none;
+	font-size: 80%;
+	overflow: hidden;
+}
+
+.footerfloats2 li a {
+	color: white;
+	margin: auto;
+    padding: 0 10px;
+	font-family: Arial, Gadget, sans-serif;
+}
+
+.footerfloats2 li a:hover {
+	color: grey;
+}
+
+/* polyfill calender css https://github.com/liorwohl/html5-simple-date-input-polyfill */
+.calendar,
+.calendar select,
+.calendar table,
+.calendar td,
+.calendar th {
+	background: #fff;
+	color: #000;
+	text-shadow: none;
+	height: auto;
+	width: auto;
+	padding: 0;
+	line-height: normal;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.calendar {
+	position: absolute;
+	border: 1px solid #c0c0c0;
+	text-align: center;
+}
+
+.calendar select {
+	margin: 3px 5px;
+	border: 1px solid #c0c0c0;
+}
+
+.calendar td,
+.calendar th {
+	width: 14%;
+	padding: 4px;
+	text-align: center;
+}
+
+.calendar td {
+	cursor: pointer;
+}
+
+.calendar .selected {
+	font-weight: bold;
+}
